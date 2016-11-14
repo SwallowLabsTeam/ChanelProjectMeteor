@@ -27,12 +27,12 @@ class Parser:
     __capsule_log_param = []
     __snapshot_param = ''
 
-    def __init__(self, files_path_list=['/home/akrem/Akrem/Projects/ChanelProject/org/swallow_labs/conf/Configuration.json']):
+    def __init__(self, files_path_list=['/home/akrem/Akrem/Projects/ChanelProjectMeteor/org/swallow_labs/conf/Configuration.json']):
         Parser.read(files_path_list)
         Parser.set_all()
 
     @staticmethod
-    def read(files_path_list, schema_path='/home/akrem/Akrem/Projects/ChanelProject/org/swallow_labs/test/schema'):
+    def read(files_path_list, schema_path='/home/akrem/Akrem/Projects/ChanelProjectMeteor/org/swallow_labs/test/schema'):
         schema = ast.literal_eval(open(schema_path).read())
         for f in files_path_list:
             try:

@@ -9,5 +9,7 @@ if c1.pull():
     if len(c1.pull_list) == 0:
         print("No Messaages")
     else:
+        dictionary = []
         for x in c1.pull_list:
-            print(json.dumps(x.__dict__))
+            dictionary.append(x.__dict__)
+        print(json.dumps(dictionary))
